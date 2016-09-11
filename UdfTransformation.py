@@ -7,3 +7,6 @@ df2 = df.select(df.name, doubled(df.age).alias('age'))
 
 #Transformation to get age that is greater than 3
 df3 = df2.filter(df2.age > 3)
+
+# Sort according to age in decreasing fashion
+df4 = df3.sort("age", ascending = False)
